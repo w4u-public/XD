@@ -1,0 +1,315 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	Modules
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+section.download h2,
+section.preview h2 {
+	display: none;
+}
+
+/* ==============================
+
+	.indexSymbol
+
+============================== */
+
+.symbol_A {
+	@extend %clearfix;
+	position: relative;
+	margin: 0 auto 3vw;
+	width: 168px;
+	background: url("../img/symbol_A_00.png") no-repeat;
+	> span {
+		@extend %clearfix;
+		display: block;
+		img {
+			float: left;
+		}
+	}
+	> img {
+		position: absolute;
+		bottom: 0;
+		right: -50px;
+	}
+}
+
+/* ==============================
+
+	.contentsMenu
+
+============================== */
+
+.contentsMenu {
+	margin: 2rem 0 4rem;
+	padding: 0;
+	text-align: center;
+	color: #000;
+	li {
+		margin: 0 .5rem;
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: 1.2rem;
+	}
+	&_github {
+		a {
+			border: none;
+		}
+	}
+}
+
+/* ==============================
+
+	.testArea
+
+============================== */
+
+.testArea {
+	margin-top: 3vw;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+.testArea_preview {
+	margin: 3vw 0;
+	line-height: 1;
+	display: inline-block;
+	text-align: left;
+	> div {
+		margin-top: 3.5vw;
+		position: relative;
+		text-align: center;
+		span.copied {
+			padding: .3rem .4rem;
+			position: absolute;
+			font-size: 1rem;
+			right: 0;
+			top: 0rem;
+			color: #fff;
+			font-weight: bold;
+			background-color: #000;
+			text-transform: uppercase;
+		}
+	}
+	&_applyChangeButton {
+		margin: 0 auto;
+		width: 45px;
+		height: 34px;
+		text-indent: -9999px;
+		background: url("../img/sprite_button.png") no-repeat -33px top;
+		cursor: pointer;
+		&.children {
+			background-position-y: bottom;
+		}
+	}
+	&_valueName {
+		padding: 0;
+		text-align: center;
+		font-size: 1.3rem;
+		font-weight: bold;
+		background-color: transparent;
+		&:hover {
+			cursor: pointer;
+			color: #000;
+			background-color: yellow;
+		}
+	}
+	&_startTag,
+	&_endTag {
+		text-align: left;	
+		display: block;
+		font-family: Menlo, "Osaka－等幅", ”ＭＳ ゴシック”;
+		font-size: 1rem;
+		color: green;
+	}
+	&_startTag {
+		margin-bottom: .5em;
+	}
+	&_endTag {
+		margin-top: 1em;
+	}
+}
+
+/* --------------------
+    Preview Sample Changer
+-------------------- */
+
+.testArea_preview_menu {
+	@extend %clearfix;
+	position: absolute;
+	right: 0;
+	bottom: -1.5rem;
+	list-style: none;
+	li {
+		float: left;
+		border: 1px solid #5E8E1A;
+		display: block;
+		padding: .3rem .5rem;
+		cursor: pointer;
+		&:hover {
+			color: #fff;
+			background-color: #5E8E1A;
+		}
+		& + li {
+			margin-left: .5rem;
+		}
+		&.isCurrent {
+			font-weight: bold;
+			color: #fff;
+			background-color: #5E8E1A;
+		}
+	}
+}
+
+[class*="testArea_preview_type-"] {
+	> div {
+		@extend %clearfix;
+		margin: auto;
+		width: 300px;
+		padding: .5rem;
+		border: 1px dashed #83D600;
+		> * {
+			padding: .5rem;
+			border: 1px solid #5E8E1A;
+			background-color: rgba(0, 100, 0, .1);
+		}
+	}
+}
+
+.testArea_preview_type-1 {
+	> div {
+		> * {
+			display: none;
+			padding: 2rem 0;
+			&:nth-child(-n+3) {
+				display: block;
+				float: left;
+				width: 32%;
+			}
+			&:nth-child(2) {
+				margin: 0 2%;
+			}
+		}
+	}
+}
+
+.testArea_preview_type-2 {
+	> div {
+		> * {
+			display: none;
+			&:nth-child(-n+4) {
+				display: block;
+			}
+			& + * {
+				margin-top: .5rem;
+			}
+		}
+	}
+}
+
+.testArea_preview_type-3 {
+	> div {
+		> * {
+			display: none;
+			text-align: center;
+			&:nth-child(-n+9) {
+				display: inline-block;
+			}
+		}
+	}
+}
+
+.testArea_preview_type-4 {
+	> div {
+		> * {
+			margin: .5%;
+			float: left;
+			width: 24%;
+		}
+	}
+}
+
+/* ==============================
+
+	.controlField
+
+============================== */
+
+.controlField {
+	span.group {
+		margin: .3rem 0;
+		display: inline-block;
+	}
+	&_play {
+		margin: .3rem 0 .3rem 5px;
+		cursor: pointer;
+	}
+}
+
+.controlField_main {
+	margin: 0 auto 2.5vw;
+	min-width: 200px;
+	display: inline-block;
+	&_selections {
+		display: inline-block;
+	}
+}
+
+.controlField_mix {
+	&_selections {
+		display: inline-block;
+	}
+}
+
+/* --------------------
+    Buttons
+-------------------- */
+
+.controlField {
+	&_modifier-add,
+	&_modifier-remove,
+	&_key-add,
+	&_key-remove {
+		margin: 0 8px;
+		position: relative;
+		top: .3rem;
+		display: inline-block;
+		width: 11px;
+		height: 11px;
+		text-indent: -9999px;
+		cursor: pointer;
+		&:hover {
+			background-position-y: bottom;
+		}
+	}
+	&_modifier-add {
+		background: url("../img/sprite_button.png") no-repeat 0 0;
+	}
+	&_modifier-remove,
+	&_key-remove {
+		background: url("../img/sprite_button.png") no-repeat -11px 0;
+	}
+	&_key-add {
+
+		background: url("../img/sprite_button.png") no-repeat -22px 0;
+	}
+}
+
+/* --------------------
+	Copyright
+-------------------- */
+
+.copyright {
+	float: left;
+	font-size: 1rem;
+}
+
+/* --------------------
+	Feedback
+-------------------- */
+
+.feedback {
+	list-style: none;
+}
