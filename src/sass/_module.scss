@@ -249,7 +249,7 @@ section.preview h2 {
 }
 
 .controlField_main {
-	margin: 0 auto 2.5vw;
+	margin: 0 auto 5vw;
 	min-width: 200px;
 	display: inline-block;
 	&_selections {
@@ -260,6 +260,19 @@ section.preview h2 {
 .controlField_mix {
 	&_selections {
 		display: inline-block;
+	}
+	.controlField_key-add {
+		position: relative;
+		&:after {
+			position: absolute;
+			top: -50%;
+			left: 100%;
+			content: "";
+			display: block;
+			width: 58px;
+			height: 20px;
+			background: url("../img/mix.png") no-repeat 0 0;
+		}
 	}
 }
 
