@@ -1,0 +1,63 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	Modifier: Easing;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+$isImported_modifier-order: true;
+
+[#{$attr}*="(^3^)"] {
+	--AE: ease!important;
+}
+
+[#{$attr}*="(-_-)"] {
+	--AE: linear!important;
+}
+
+[#{$attr}*="(*^.^*)"] {
+	--AE: ease-in-out!important;
+}
+
+[#{$attr}*="(*ﾉ▽ﾉ)"] {
+	--AE: var(--Acirc)!important;
+}
+
+[#{$attr}*="(;Ｏ;)"] {
+	--AE: var(--Ain-circ)!important;
+}
+
+[#{$attr}*="_(_^_)_"] {
+	--AE: var(--Aout-circ)!important;
+}
+
+[#{$attr}*="(T.T)"] {
+	--AE: ease-in!important;
+}
+
+[#{$attr}*="(＞_＜)"] {
+	--AE: ease-out!important;
+}
+
+[#{$attr}*="(;´・`)>"] {
+	--AE: var(--Aback)!important;
+}
+
+[#{$attr}*="(-_^;)"] {
+	--AE: var(--Ain-back)!important;
+}
+
+[#{$attr}*="(':')"] {
+	--AE: var(--Aout-back)!important;
+}
+
+[#{$attr}*="(・.)"] {
+	--AE: var(--Aexpo)!important;
+}
+
+[#{$attr}*="(;-Ｏ-A;)"] {
+	--AE: var(--Ain-expo)!important;
+}
+
+[#{$attr}*="(^_-)"] {
+	--AE: var(--Aout-expo)!important;
+}
