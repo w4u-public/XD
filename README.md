@@ -33,7 +33,7 @@ This library is using Custom Properties. [Can I use var()](https://caniuse.com/#
 
 ### Ex.
 
-- [Swoosh](http://localhost:3010/?%CE%B5=%E2%94%8C(;%EF%BF%A3%E2%96%BD%EF%BF%A3)%E2%94%98&(%27:%27)&(%60%EF%BD%A5%CF%89%EF%BD%A5%C2%B4)&(%E3%83%BB%EF%BC%A1%E3%83%BB)%E2%98%86%E3%83%BE(%C2%B4%E2%96%BD%60))
+- [Swoosh](https://w4u-public.github.io/XD.css/?%CE%B5=%E2%94%8C(;%EF%BF%A3%E2%96%BD%EF%BF%A3)%E2%94%98&(%27:%27)&(%E3%83%BB%EF%BC%A1%E3%83%BB)%E2%98%86%E3%83%BE(%C2%B4%E2%96%BD%60)&(%60%EF%BD%A5%CF%89%EF%BD%A5%C2%B4))
 
 <https://w4u-public.github.io/XD.css/>
 
