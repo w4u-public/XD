@@ -21,7 +21,7 @@ section.preview h2 {
 	margin: 0 auto 3vw;
 	width: 168px;
 	background: url("../img/symbol_A_00.png") no-repeat;
-	> span {
+	span {
 		@extend %clearfix;
 		display: block;
 		img {
